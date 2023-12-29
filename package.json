@@ -1,0 +1,21 @@
+{
+  "name": "members",
+  "version": "0.0.0",
+  "description": "Church members registration",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "@dbsiavichay",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "prisma": "^5.7.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
