@@ -1,0 +1,146 @@
+.sidebar-wrapper.sidebar-theme
+  nav#compactSidebar
+    .theme-logo
+      a(href='index.html')
+        img.navbar-logo(src='assets/img/90x90.jpg', alt='logo')
+    ul.menu-categories
+      li.menu
+        a.menu-toggle(href='#dashboard', data-active='false')
+          .base-menu
+            .base-icons
+              svg.feather.feather-home(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                path(d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z')
+                polyline(points='9 22 9 12 15 12 15 22')
+        .tooltip
+          span Menu 1
+      li.menu
+        a.menu-toggle(href='#app', data-active='false')
+          .base-menu
+            .base-icons
+              svg.feather.feather-airplay(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                path(d='M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1')
+                polygon(points='12 15 17 21 7 21 12 15')
+        .tooltip
+          span Menu 2
+      li.menu
+        a.menu-toggle(href='#users', data-active='false')
+          .base-menu
+            .base-icons
+              svg.feather.feather-file(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                path(d='M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z')
+                polyline(points='13 2 13 9 20 9')
+        .tooltip
+          span Menu 3
+      li.menu.active
+        a.menu-toggle(href='#more', data-active='true')
+          .base-menu
+            .base-icons
+              svg.feather.feather-terminal(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                polyline(points='4 17 10 11 4 5')
+                line(x1='12', y1='19', x2='20', y2='19')
+        .tooltip
+          span Starter Kit
+    .external-links
+      a(href='../../documentation/index.html', target='_blank')
+        svg.feather.feather-book-open(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+          path(d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z')
+          path(d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z')
+        .tooltip
+          span Documentation
+  #compact_submenuSidebar.submenu-sidebar
+    .theme-brand-name
+      a(href='index.html') Cork
+    #dashboard.submenu
+      .category-info
+        h5 Menu 1
+        p This menu consist of Different Icons.
+      ul.submenu-list(data-parent-element='#dashboard')
+        li
+          a(href='javascript:void(0)')
+            svg.feather.feather-grid(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              rect(x='3', y='3', width='7', height='7')
+              rect(x='14', y='3', width='7', height='7')
+              rect(x='14', y='14', width='7', height='7')
+              rect(x='3', y='14', width='7', height='7')
+            |  Submenu 1
+        li
+          a(href='javascript:void(0)')
+            svg.feather.feather-layers(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              polygon(points='12 2 2 7 12 12 22 7 12 2')
+              polyline(points='2 17 12 22 22 17')
+              polyline(points='2 12 12 17 22 12')
+            |  Submenu 2
+    #app.submenu
+      .category-info
+        h5 Menu 2
+        p This menu consist of Same Icons.
+      ul.submenu-list(data-parent-element='#app')
+        li
+          a(href='javascript:void(0)')
+            span.icon
+              svg.feather.feather-circle(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                circle(cx='12', cy='12', r='10')
+            |  Submenu 1
+        li
+          a(href='javascript:void(0)')
+            span.icon
+              svg.feather.feather-circle(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                circle(cx='12', cy='12', r='10')
+            |  Submenu 2
+    #users.submenu
+      .category-info
+        h5 Menu 3
+        p This menu consist of Sub-Sub category.
+      ul.submenu-list(data-parent-element='#users')
+        li
+          a(href='javascript:void(0)')
+            span.icon
+              svg.feather.feather-circle(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                circle(cx='12', cy='12', r='10')
+            |  Submenu 1
+        li
+          a(href='javascript:void(0)')
+            span.icon
+              svg.feather.feather-circle(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                circle(cx='12', cy='12', r='10')
+            |  Submenu 2
+        li.sub-submenu
+          a.collapsed(role='menu', data-toggle='collapse', data-target='#starter-kit', aria-expanded='false')
+            div
+              span.icon
+                svg.feather.feather-circle(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                  circle(cx='12', cy='12', r='10')
+              |  Submenu 3
+            |  
+            svg.feather.feather-chevron-right(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              polyline(points='9 18 15 12 9 6')
+          ul#starter-kit.collapse(data-parent='#compact_submenuSidebar')
+            li
+              a(href='javascript:void(0);')  Sub Submenu 1 
+            li
+              a(href='javascript:void(0);')  Sub Submenu 2 
+            li
+              a(href='javascript:void(0);')  Sub Submenu 2 
+    #more.submenu
+      .category-info
+        h5 Starter Kit
+        p With starter kit, you can begin your work without any hassle.
+      ul.submenu-list(data-parent-element='#more')
+        li.active
+          a(href='starter_kit_blank_page.html')
+            span.icon
+              svg.feather.feather-circle(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                circle(cx='12', cy='12', r='10')
+            |  Blank Page
+        li
+          a(href='starter_kit_breadcrumb.html')
+            span.icon
+              svg.feather.feather-circle(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                circle(cx='12', cy='12', r='10')
+            |  Breadcrumb
+        li
+          a(href='starter_kit_boxed.html')
+            span.icon
+              svg.feather.feather-circle(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+                circle(cx='12', cy='12', r='10')
+            |  Boxed

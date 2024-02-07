@@ -1,0 +1,29 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no')
+    title CORK Admin Template - Starter Kit - Blank Page
+    link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+    include partials/css.pug
+  body.sidebar-noneoverflow.starterkit
+    // BEGIN NAVBAR
+    include partials/navbar.pug
+    // END NAVBAR
+    // BEGIN MAIN CONTAINER
+    #container.main-container
+      .overlay
+      .search-overlay
+      // BEGIN SIDEBAR
+      include partials/sidebar.pug
+      // END SIDEBAR
+      // BEGIN CONTENT AREA
+      #content.main-content
+        .layout-px-spacing
+          block content
+            p Content
+        include partials/footer.pug
+      // END CONTENT AREA
+    // END MAIN CONTAINER
+    include partials/js.pug
